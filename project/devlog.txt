@@ -1,0 +1,178 @@
+MonkeyBusiness
+Marcus Ng
+Xing Tao Shi
+Ishtiaque Mahdi
+pd 4
+---------------------
+ShootyTD
+
+/////////// Zone of Reflection \\\\\\\\\\\
+------------------------------------------
+OBSTACLES OVERCOME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-The inital switch from terminal to processing took some time to adjust to.
+-Learning about PVectors was a mind-boggling experience.
+-Buttons were a hassle to deal with but we eventually got the working.
+-Processing was not writing into the .csv file. Turns out it was only a missing "!". 
+
+UNRESOLVED ISSUES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- You can place turrents and traps on the button interface. 
+- Enemy vibrates sometimes when moving because of how we implemeted PVectors.
+- Button text somtimes disappears.
+
+COOL STUFF LEARNED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Learned how to use processing in general
+- Learned how to use PVectors
+- Learned how to use .csv files in processing
+- Implemented graphics into processing.
+
+MID-DEVELOPMENT DESIGN CHANGES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- We planned on using x,y coordinates for all the Objects (ex: Player, Bullets, etc).
+However, we realized it makes more sense to use PVectors than only x,y coordinates because vectors already have
+x,y components and have additional methods to easily calculate the magnitude of the vector.
+- We decided to only check for the closest enemy when a turret is finding an enemy to target instead of storing enemies in range of the turret in a priority queue because a priority queue is unecessary
+- We wanted to have an inventory but decided that it was not a priority for us at the moment.
+
+LESSONS LEARNED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- We had a few merge conflicts, so we learned early on to plan and delegate work.
+- Make sure you comment your code, trying to understand uncommented code takes away precious time. 
+- TEAMWORK IS GREAT!
+
+
+ ______   ______   __   __   __       ______   _______     
+/_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\    
+\:::_ \ \\::::_\/_\:\ \\ \ \\:\ \    \:::_ \ \\::::__\/__  
+ \:\ \ \ \\:\/___/\\:\ \\ \ \\:\ \    \:\ \ \ \\:\ /____/\ 
+  \:\ \ \ \\::___\/_\:\_/.:\ \\:\ \____\:\ \ \ \\:\\_  _\/ 
+   \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \ 
+    \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/ 
+==============================================================
+
+2017-05-18
+--------------------------------------------------------------
+Marcus, Ish, Xing Tao :: Worked on plan and updated proposal
+==============================================================
+
+2017-05-19
+--------------------------------------------------------------
+Marcus, Ish, Xing Tao :: Worked on the GameManager, Player, and Nexus
+- Made the Player and Nexus display on the screen
+==============================================================
+
+2017-05-20
+--------------------------------------------------------------
+Marcus :: Added Player movement and shooting
+Ish, Xing Tao :: Worked on enemy
+==============================================================
+
+2017-05-22
+--------------------------------------------------------------
+Marcus, Xing Tao :: Worked on making the enemy follow its 'target' (player or nexus)
+Marcus :: Fixed player movement bug and added health bars to player and enemy
+- Added bullet collision with enemy
+- Health bars now decrease based on health
+Ish :: Created graphics
+==============================================================
+
+2017-05-23
+--------------------------------------------------------------
+Marcus :: Changed health bars UI
+Xing Tao :: Created gold class
+- worked on enemies dropping gold
+- players picking up gold
+Ish::
+- worked on shop (check for money and exchange money for weapons)
+-worked on weapons (created basic weapons to add to shop)
+==============================================================
+
+2017-05-24
+--------------------------------------------------------------
+Marcus, Xing Tao :: Started working on enemy attacking
+Marcus :: Enemies switch target to nexus if in range
+Ish:: Setting Up Shop, Able to buy weapons in exchange for dinero, (trying to fix time delay)
+==============================================================
+
+2017-05-25
+--------------------------------------------------------------
+Marcus, Xing Tao, Ish :: Worked on buying items from the shop
+Xing Tao :: Worked on towers
+==============================================================
+
+2017-05-26
+--------------------------------------------------------------
+Marcus, Xing Tao :: Fixed tower targeting after the first enemy is killed
+Ish :: Worked on shop
+==============================================================
+
+2017-05-27
+--------------------------------------------------------------
+Marcus :: Turret now shoots closest enemy
+Xing Tao :: created grid lines
+==============================================================
+
+2017-05-29
+--------------------------------------------------------------
+Xing Tao :: fixed grid lines, implemented hovering over a grid and placing a tower
+==============================================================
+
+2017-05-30
+--------------------------------------------------------------
+Marcus :: Revised UML and flow chart
+Xing Tao :: Fixed tower placement and plan, made button functionality for building a tower
+Ish :: Worked on buttons + shop setup
+==============================================================
+
+2017-05-31
+--------------------------------------------------------------
+Marcus :: Added Attributes.pde and refactored
+Xing Tao :: Worked on making grids compatabile with traps and worked on button
+Ish :: Converted shop so it works with the new Button setup.
+==============================================================
+
+2017-06-01
+--------------------------------------------------------------
+Marcus :: Fixed enemy targeting and updated UML and flow
+Xing Tao :: Worked on making traps and worked on button, revised plan
+
+==============================================================
+
+2017-06-02
+--------------------------------------------------------------
+Marcus, Xing Tao, Ish :: Trap placement
+==============================================================
+
+2017-06-03
+--------------------------------------------------------------
+Marcus :: Added enemy queues and spawning based on wave,
+fixed enemy attacking distance, and attempted player weapon balancing 
+==============================================================
+
+2017-06-04
+--------------------------------------------------------------
+Xing Tao :: Worked on making buttons run properly and added text for buttons,
+fixed funtionality of traps
+Marcus :: Fixed trap and turret placement bug, added wave text, nerfed enemies
+Ish:: Finished implementing nodes. Map now changes based on wave level. Started 
+working on gameover.
+==============================================================
+
+2017-06-05
+--------------------------------------------------------------
+Xing Tao, Marcus :: Constrained enemy spawn to left, top, right
+Marcus :: Added shop bar
+Ish:: Finished a crude gameover screen. Working on creating and displaying score
+and logging scores in a CSV file. Also made the restart feature.
+==============================================================
+
+2017-06-06
+--------------------------------------------------------------
+Marcus :: Fixed health bars, bug fixes, balancing, updated flow and uml
+Xing Tao :: Fixed pushing to csv and fixed a bug regarding shop
+Also added movement constraints.
+Ish:: Updated background graphics, added menu screen, displayed highscores.
+==============================================================
+
